@@ -8,6 +8,9 @@ SELECT p.PILNO  AS pilotNumber,v.VOLARR AS CityArive
 FROM PILOTE p JOIN VOL v  ON p.PILNO =v.PILNO 
 -- ====================================================================================================================
 -- 3:Afficher les caractéristiques de tous les AIRBUS.
+SELECT*
+FROM AVION 
+WHERE UPPER( AVNOM) LIKE '%AIRBUS%'
 -- ====================================================================================================================
 -- 4:Afficher les noms des pilotes qui habitent PARIS (autre que JEAN).
 -- ====================================================================================================================
