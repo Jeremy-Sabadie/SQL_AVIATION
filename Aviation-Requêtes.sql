@@ -1,4 +1,7 @@
 -- 1:Afficher les numéros de vols au départ de Paris.
+SELECT *
+FROM VOL  
+WHERE TRIM( UPPER(VOLDEP)) ='PARIS';
 -- ====================================================================================================================
 -- 2:Afficher les numéros de pilotes en service sur des vols et la ville d'arrivée de leur vol.
 -- ====================================================================================================================
